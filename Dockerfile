@@ -6,7 +6,7 @@ ENV PYTHONNOUSERSITE=1 \
     LC_ALL=C.UTF-8
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends bash procps ca-certificates git build-essential \
+    && apt-get install -y --no-install-recommends bash procps ca-certificates git build-essential bash procps \
     && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /opt/ktypr-source /opt/ktypr-build /work \
